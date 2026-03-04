@@ -6,6 +6,10 @@ import All from "./All";
 import UseRef from "./UseRef";
 import UseMemo from "./UseMemo";
 import UseCallBack from "./usecallback/UseCallBack";
+import Container from "./UseContext/Components/Container";
+import UseReducer from "./useReducer/UseReducer";
+import UseLayoutEffect from "./useLayoutEffect/UseLayoutEffect";
+import Main from "./CustomHooks/Main";
 
 function App() {
   return (
@@ -16,7 +20,11 @@ function App() {
       <Route path="/all" element={<All />} />
       <Route path="/useRef" element={<UseRef />} />
       <Route path="/useMemo" element={<UseMemo />} />
-      <Route path="/useCallBack" element={<UseCallBack   />} />
+      <Route path="/useCallBack" element={<UseCallBack />} />
+      <Route path="/useContext" element={<Container />} />
+      <Route path="/useReducer" element={<UseReducer />} />
+      <Route path="/uselayouteffect" element={<UseLayoutEffect />} />
+      <Route path="/usecustohooks" element={<Main />} />
     </Routes>
   );
 }
